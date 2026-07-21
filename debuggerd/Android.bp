@@ -132,7 +132,7 @@ cc_library_static {
     name: "libdebuggerd_handler",
     defaults: [
         "debuggerd_defaults",
-        "rust_static_std",
+        "rust_static_std", // (Deprecated in A17)
     ],
     srcs: ["handler/debuggerd_fallback_nop.cpp"],
 
@@ -181,7 +181,7 @@ cc_library {
     name: "libdebuggerd_client",
     defaults: [
         "debuggerd_defaults",
-        "rust_static_std",
+        "rust_static_std", // (Deprecated in A17)
     ],
     srcs: [
         "client/debuggerd_client.cpp",
@@ -367,7 +367,7 @@ cc_test {
     name: "debuggerd_test",
     defaults: [
         "debuggerd_defaults",
-        "rust_static_std",
+        "rust_static_std", // (Deprecated in A17)
     ],
     require_root: true,
 
@@ -458,7 +458,7 @@ cc_binary {
     ],
     defaults: [
         "debuggerd_defaults",
-        "rust_static_std",
+        "rust_static_std", // (Deprecated in A17)
     ],
 
     compile_multilib: "both",
